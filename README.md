@@ -2,5 +2,4 @@
 
 
 
-@@
-https://rap0d.github.io/study/2019/11/22/r_049_arules/
+
