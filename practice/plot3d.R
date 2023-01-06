@@ -1,18 +1,18 @@
-#·Îµå
+#ë¡œë“œ
 df<-read.csv("C:/Users/alsdu/Downloads/hotel2.csv")
 
-#±¸Á¶È®ÀÎ
+#êµ¬ì¡°í™•ì¸
 str(df)
 
-#ÆÑÅÍº¯°æ
+#íŒ©í„°ë³€ê²½
 for (j in c(1:2,9,13:14)){
   df[,j]<-as.factor(df[,j])
 }
 
-#¿£¿¡ÀÌ ÀÏ´Ü ±×³É Áö¿ò
+#ì—”ì—ì´ ì¼ë‹¨ ê·¸ëƒ¥ ì§€ì›€
 df$children<-ifelse(is.na(df_new$children),0, df_new$children)
 
-#ÆÈ·¹Æ®ÁöÁ¤
+#íŒ”ë ˆíŠ¸ì§€ì •
 mycolors <- c('royalblue1', 'darkcyan', 'oldlace')
 df$color <- mycolors[ as.numeric(df$reserved_room_type ) ]
 
